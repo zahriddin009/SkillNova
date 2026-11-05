@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML & CSS Asoslari — SkillNova</title>
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/courses.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER / INTRO ============ -->
+<div class="preloader" data-preloader>
+  <div class="preloader-inner">
+    <div class="preloader-logo"><span class="preloader-mark">S</span></div>
+    <div class="preloader-name">Skill<span>Nova</span></div>
+    <div class="preloader-bar"><span data-preloader-fill></span></div>
+  </div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">S</span>
+      SkillNova
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html#hero" data-i18n="nav_home">Bosh sahifa</a>
+      <a href="index.html#courses" data-i18n="nav_courses">Kurslar</a>
+      <a href="index.html#subjects" data-i18n="nav_subjects">Fanlar</a>
+      <a href="index.html#features" data-i18n="nav_features">Imkoniyatlar</a>
+      <a href="index.html#footer" data-i18n="nav_contact">Aloqa</a>
+    </nav>
+
+    <div class="nav-actions">
+      <div class="lang-switch" data-lang-switch>
+        <button class="lang-btn" data-lang-btn aria-haspopup="listbox" aria-expanded="false">
+          <span data-lang-current>UZ</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <ul class="lang-menu" data-lang-menu role="listbox">
+          <li role="option" data-lang-option="uz">🇺🇿 O'zbekcha</li>
+          <li role="option" data-lang-option="ru">🇷🇺 Русский</li>
+          <li role="option" data-lang-option="en">🇬🇧 English</li>
+        </ul>
+      </div>
+
+      <button class="theme-toggle" data-theme-toggle aria-label="Mavzuni almashtirish">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="index.html#courses" class="btn btn-ghost btn-sm" data-i18n="nav_cabinet">Kabinet</a>
+      <button class="burger" data-burger aria-label="Menyu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel" data-mobile-panel>
+  <a href="index.html#hero" data-i18n="nav_home">Bosh sahifa</a>
+  <a href="index.html#courses" data-i18n="nav_courses">Kurslar</a>
+  <a href="index.html#subjects" data-i18n="nav_subjects">Fanlar</a>
+  <a href="index.html#features" data-i18n="nav_features">Imkoniyatlar</a>
+  <a href="index.html#footer" data-i18n="nav_contact">Aloqa</a>
+  <div class="mobile-lang">
+    <button data-lang-option="uz">UZ</button>
+    <button data-lang-option="ru">RU</button>
+    <button data-lang-option="en">EN</button>
+  </div>
+  <a href="index.html#courses" class="btn btn-primary" data-i18n="nav_cabinet_mobile">Kabinetga kirish</a>
+</div>
+
+<main>
+  <div class="container">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html" data-i18n="cd_breadcrumb_home">Bosh sahifa</a>
+      <span class="sep">/</span>
+      <a href="index.html#subjects" data-i18n="cd_breadcrumb_subjects">Fanlar</a>
+      <span class="sep">/</span>
+      <span class="current" data-i18n="cd_breadcrumb_current">HTML & CSS</span>
+    </div>
+
+    <!-- Course banner -->
+    <div class="course-banner">
+      <span class="course-banner-cat">🎨 HTML &amp; CSS</span>
+      <h1 data-i18n="cd_title">HTML & CSS Asoslari</h1>
+      <p data-i18n="cd_subtitle">Nol darajadan boshlab, chiroyli va responsiv veb-sahifalar yaratishni o'rganing.</p>
+      <div class="course-banner-meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><span data-i18n="cd_meta_lessons">38 video dars</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1z"/></svg><span data-i18n="cd_meta_level">Boshlang'ich</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span data-i18n="cd_meta_students">4,120 o'quvchi</span></span>
+        <span>⭐ <span data-i18n="cd_meta_rating">4.9 (860 sharh)</span></span>
+      </div>
+    </div>
+
+    <div class="course-layout">
+      <!-- Main content -->
+      <div>
+        <div class="cd-tabs">
+          <button class="cd-tab-btn active" data-cd-tab="overview" data-i18n="cd_tab_overview">Umumiy ma'lumot</button>
+          <button class="cd-tab-btn" data-cd-tab="videos" data-i18n="cd_tab_videos">Video darslar</button>
+          <button class="cd-tab-btn" data-cd-tab="practice" data-i18n="cd_tab_practice">Amaliy mashg'ulotlar</button>
+          <button class="cd-tab-btn" data-cd-tab="tests" data-i18n="cd_tab_tests">Testlar</button>
+        </div>
+
+        <!-- Overview -->
+        <div class="cd-panel active" data-cd-panel="overview">
+          <h2 data-i18n="cd_overview_heading">Kurs haqida</h2>
+          <p data-i18n="cd_overview_text">Bu kurs sizni dasturlash olamiga olib kiradi. HTML5 va CSS3 asoslarini amaliyot orqali o'rganib, real loyihalar — shaxsiy sayt, landing page va portfolio — yaratishni o'rganasiz. Har bir dars video, matnli tushuntirish va amaliy topshiriq bilan mustahkamlanadi.</p>
+
+          <h2 data-i18n="cd_overview_learn_heading">Bu kursda nimalarni o'rganasiz</h2>
+          <div class="learn-grid">
+            <div class="learn-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="cd_learn_1">HTML5 semantik teglar va sahifa strukturasi</span></div>
+            <div class="learn-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="cd_learn_2">CSS3 bilan stilizatsiya, flexbox va grid tizimi</span></div>
+            <div class="learn-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="cd_learn_3">Responsiv dizayn — mobil, tablet va desktop</span></div>
+            <div class="learn-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="cd_learn_4">Animatsiya va o'tishlar (transition, animation)</span></div>
+            <div class="learn-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="cd_learn_5">Formalar va foydalanuvchi interfeysi elementlari</span></div>
+            <div class="learn-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="cd_learn_6">Real loyiha: portfolio saytini noldan qurish</span></div>
+          </div>
+        </div>
+
+        <!-- Videos -->
+        <div class="cd-panel" data-cd-panel="videos">
+          <h2 data-i18n="cd_videos_heading">Video darslar ro'yxati</h2>
+          <div class="lesson-list">
+
+            <div class="lesson-item">
+              <div class="lesson-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="lesson-info"><div class="lesson-num">01</div><div class="lesson-title" data-i18n="cd_video_1">Kirish: HTML nima va u qanday ishlaydi?</div></div>
+              <div class="lesson-duration"><span class="lesson-tag" data-i18n="cd_word_preview">Ko'rish</span> 08:12</div>
+            </div>
+
+            <div class="lesson-item">
+              <div class="lesson-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="lesson-info"><div class="lesson-num">02</div><div class="lesson-title" data-i18n="cd_video_2">HTML sahifa strukturasi va teglar</div></div>
+              <div class="lesson-duration">12:40</div>
+            </div>
+
+            <div class="lesson-item">
+              <div class="lesson-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="lesson-info"><div class="lesson-num">03</div><div class="lesson-title" data-i18n="cd_video_3">Rasm, havola va ro'yxatlar bilan ishlash</div></div>
+              <div class="lesson-duration">10:55</div>
+            </div>
+
+            <div class="lesson-item">
+              <div class="lesson-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="lesson-info"><div class="lesson-num">04</div><div class="lesson-title" data-i18n="cd_video_4">CSS asoslari: selektorlar va xususiyatlar</div></div>
+              <div class="lesson-duration">14:20</div>
+            </div>
+
+            <div class="lesson-item is-locked">
+              <div class="lesson-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 118 0v4"/></svg></div>
+              <div class="lesson-info"><div class="lesson-num">05</div><div class="lesson-title" data-i18n="cd_video_5">Box model, margin va padding</div></div>
+              <div class="lesson-duration"><span class="lesson-tag" data-i18n="cd_word_locked">Yopiq</span> 11:35</div>
+            </div>
+
+            <div class="lesson-item is-locked">
+              <div class="lesson-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 118 0v4"/></svg></div>
+              <div class="lesson-info"><div class="lesson-num">06</div><div class="lesson-title" data-i18n="cd_video_6">Flexbox yordamida joylashtirish</div></div>
+              <div class="lesson-duration"><span class="lesson-tag" data-i18n="cd_word_locked">Yopiq</span> 16:02</div>
+            </div>
+
+            <div class="lesson-item is-locked">
+              <div class="lesson-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 118 0v4"/></svg></div>
+              <div class="lesson-info"><div class="lesson-num">07</div><div class="lesson-title" data-i18n="cd_video_7">CSS Grid tizimi bilan layout qurish</div></div>
+              <div class="lesson-duration"><span class="lesson-tag" data-i18n="cd_word_locked">Yopiq</span> 18:47</div>
+            </div>
+
+            <div class="lesson-item is-locked">
+              <div class="lesson-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 118 0v4"/></svg></div>
+              <div class="lesson-info"><div class="lesson-num">08</div><div class="lesson-title" data-i18n="cd_video_8">Amaliyot: portfolio sahifasini qurish</div></div>
+              <div class="lesson-duration"><span class="lesson-tag" data-i18n="cd_word_locked">Yopiq</span> 22:10</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Practice -->
+        <div class="cd-panel" data-cd-panel="practice">
+          <h2 data-i18n="cd_practice_heading">Amaliy mashg'ulotlar</h2>
+          <div class="practice-list">
+
+            <div class="practice-item">
+              <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+              <div class="practice-body"><h3 data-i18n="cd_practice_1_title">Shaxsiy vizit-kartochka sahifasi</h3><p data-i18n="cd_practice_1_desc">HTML va CSS yordamida oddiy shaxsiy sahifa yaratish.</p></div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+              <div class="practice-body"><h3 data-i18n="cd_practice_2_title">Flexbox bilan navigatsiya paneli</h3><p data-i18n="cd_practice_2_desc">Responsiv navigatsiya menyusini flexbox asosida qurish.</p></div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+              <div class="practice-body"><h3 data-i18n="cd_practice_3_title">Mahsulot kartochkalari (Grid)</h3><p data-i18n="cd_practice_3_desc">CSS Grid yordamida mahsulotlar to'plamini joylashtirish.</p></div>
+            </div>
+
+            <div class="practice-item">
+              <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+              <div class="practice-body"><h3 data-i18n="cd_practice_4_title">Yakuniy loyiha: Portfolio sayti</h3><p data-i18n="cd_practice_4_desc">O'rganilgan barcha bilimlarni birlashtirib, to'liq portfolio sayt qurish.</p></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Tests -->
+        <div class="cd-panel" data-cd-panel="tests">
+          <h2 data-i18n="cd_tests_heading">Testlar</h2>
+          <div class="test-list">
+
+            <div class="test-item">
+              <div class="test-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+              <div class="test-info"><h3 data-i18n="cd_test_1_title">HTML asoslari bo'yicha test</h3><div class="test-meta">15 <span data-i18n="cd_word_questions">savol</span> · 10 <span data-i18n="cd_word_min">daqiqa</span></div></div>
+            </div>
+
+            <div class="test-item">
+              <div class="test-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+              <div class="test-info"><h3 data-i18n="cd_test_2_title">CSS selektorlari va box model testi</h3><div class="test-meta">18 <span data-i18n="cd_word_questions">savol</span> · 12 <span data-i18n="cd_word_min">daqiqa</span></div></div>
+            </div>
+
+            <div class="test-item">
+              <div class="test-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+              <div class="test-info"><h3 data-i18n="cd_test_3_title">Flexbox va Grid bo'yicha yakuniy test</h3><div class="test-meta">20 <span data-i18n="cd_word_questions">savol</span> · 15 <span data-i18n="cd_word_min">daqiqa</span></div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="cd-sidebar">
+        <div class="cd-sidebar-price" data-i18n="cd_sidebar_price_label">Bepul</div>
+        <a href="#" class="btn btn-primary" data-i18n="cd_sidebar_enroll_btn">Kursga yozilish</a>
+
+        <div class="cd-includes">
+          <div class="cd-includes-heading" data-i18n="cd_sidebar_includes_heading">Kursga kiradi</div>
+          <div class="cd-include-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><span data-i18n="cd_sidebar_include_1">38 video dars</span></div>
+          <div class="cd-include-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg><span data-i18n="cd_sidebar_include_2">4 amaliy mashg'ulot</span></div>
+          <div class="cd-include-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span data-i18n="cd_sidebar_include_3">3 test va yakuniy baholash</span></div>
+          <div class="cd-include-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span data-i18n="cd_sidebar_include_4">Umrbod kirish huquqi</span></div>
+          <div class="cd-include-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M9 13.5L7 22l5-3 5 3-2-8.5"/></svg><span data-i18n="cd_sidebar_include_5">Kurs tugagach sertifikat</span></div>
+        </div>
+
+        <div class="cd-instructor">
+          <div class="avatar">DM</div>
+          <div>
+            <strong>Dilshod Mirzaev</strong>
+            <span data-i18n="cd_sidebar_instructor_role">Frontend mentor</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span data-i18n="footer_copyright">© 2026 SkillNova. Barcha huquqlar himoyalangan.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

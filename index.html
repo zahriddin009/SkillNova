@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillNova — Kelajagingni bugun qur</title>
+  <meta name="description"
+    content="SkillNova — dasturlash, AI, Python va English bo'yicha zamonaviy online ta'lim platformasi.">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+  <!-- ============ PRELOADER / INTRO ============ -->
+  <div class="preloader" data-preloader>
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span class="preloader-mark">S</span>
+      </div>
+      <div class="preloader-name">Skill<span>Nova</span></div>
+      <div class="preloader-bar"><span data-preloader-fill></span></div>
+    </div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <span class="logo-mark">S</span>
+        SkillNova
+      </a>
+
+      <nav class="nav-links">
+        <a href="#hero" data-i18n="nav_home">Bosh sahifa</a>
+        <a href="#courses" data-i18n="nav_courses">Kurslar</a>
+        <a href="#subjects" data-i18n="nav_subjects">Fanlar</a>
+        <a href="#features" data-i18n="nav_features">Imkoniyatlar</a>
+        <a href="#footer" data-i18n="nav_contact">Aloqa</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch" data-lang-switch>
+          <button class="lang-btn" data-lang-btn aria-haspopup="listbox" aria-expanded="false">
+            <span data-lang-current>UZ</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+          <ul class="lang-menu" data-lang-menu role="listbox">
+            <li role="option" data-lang-option="uz">🇺🇿 O'zbekcha</li>
+            <li role="option" data-lang-option="ru">🇷🇺 Русский</li>
+            <li role="option" data-lang-option="en">🇬🇧 English</li>
+          </ul>
+        </div>
+
+        <button class="theme-toggle" data-theme-toggle aria-label="Mavzuni almashtirish">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <a href="#courses" class="btn btn-ghost btn-sm" data-i18n="nav_cabinet">Kabinet</a>
+        <button class="burger" data-burger aria-label="Menyu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav panel -->
+  <div class="mobile-panel" data-mobile-panel>
+    <a href="#hero" data-i18n="nav_home">Bosh sahifa</a>
+    <a href="#courses" data-i18n="nav_courses">Kurslar</a>
+    <a href="#subjects" data-i18n="nav_subjects">Fanlar</a>
+    <a href="#features" data-i18n="nav_features">Imkoniyatlar</a>
+    <a href="#footer" data-i18n="nav_contact">Aloqa</a>
+    <div class="mobile-lang">
+      <button data-lang-option="uz">UZ</button>
+      <button data-lang-option="ru">RU</button>
+      <button data-lang-option="en">EN</button>
+    </div>
+    <a href="#courses" class="btn btn-primary" data-i18n="nav_cabinet_mobile">Kabinetga kirish</a>
+  </div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-grid-lines"></div>
+
+      <div class="container">
+        <div class="hero-copy" data-reveal>
+          <span class="hero-badge" data-reveal-item style="--d:0"><span class="dot"></span> <span
+              data-i18n="hero_badge">10,000+ o'quvchi bilan birga o'sing</span></span>
+          <h1 data-reveal-item style="--d:1">
+            <span data-i18n="hero_title1">Kelajagingni</span>
+            <span class="accent" data-i18n="hero_title_accent">SkillNova</span>
+            <span data-i18n="hero_title2">bilan qur</span>
+          </h1>
+          <p class="hero-lead" data-reveal-item style="--d:2" data-i18n="hero_lead">Zamonaviy bilimlarni o'rganing,
+            yangi ko'nikmalar egallang va o'z maqsadlaringizga tezroq erishing — dasturlash, AI va Englishni bitta
+            platformada.</p>
+          <div class="hero-cta" data-reveal-item style="--d:3">
+            <a href="#courses" class="btn btn-primary" data-i18n="hero_cta_primary">Kurslarni boshlash</a>
+            <a href="#features" class="btn btn-ghost" data-i18n="hero_cta_secondary">Ko'proq bilish</a>
+          </div>
+          <div class="hero-trust" data-reveal-item style="--d:4">
+            <div class="avatar-stack">
+              <span>AZ</span><span>BN</span><span>DK</span><span>+</span>
+            </div>
+            <p class="hero-trust-text"><strong>10,000+</strong> <span data-i18n="hero_trust">o'quvchi allaqachon
+                o'rganmoqda</span></p>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal-visual>
+          <svg width="0" height="0" style="position:absolute">
+            <defs>
+              <linearGradient id="ringGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6c63ff" />
+                <stop offset="100%" stop-color="#00c6ff" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          <div class="orbit-ring orbit-ring-1"></div>
+          <div class="orbit-ring orbit-ring-2"></div>
+
+          <div class="mock-card mock-main">
+            <div class="mock-header">
+              <div class="mock-avatar">
+                <span class="ring">AZ</span>
+                <div>
+                  <div class="name">Aziz Karimov</div>
+                  <div class="role" data-i18n="hero_mock_role">Frontend yo'nalishi</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mock-progress-ring" data-ring-value="78">
+              <svg viewBox="0 0 120 120">
+                <circle class="track" cx="60" cy="60" r="50" />
+                <circle class="value" cx="60" cy="60" r="50" />
+              </svg>
+              <div class="label">78%<small data-i18n="hero_mock_progress">Umumiy progress</small></div>
+            </div>
+
+            <div class="mock-bars">
+              <div class="mock-bar-row">
+                <span class="lbl" data-i18n="hero_mock_frontend">Frontend</span>
+                <div class="mock-bar-track">
+                  <div class="mock-bar-fill" style="width:85%"></div>
+                </div>
+                <span class="pct">85%</span>
+              </div>
+              <div class="mock-bar-row">
+                <span class="lbl" data-i18n="hero_mock_python">Python</span>
+                <div class="mock-bar-track">
+                  <div class="mock-bar-fill" style="width:72%"></div>
+                </div>
+                <span class="pct">72%</span>
+              </div>
+              <div class="mock-bar-row">
+                <span class="lbl" data-i18n="hero_mock_english">English</span>
+                <div class="mock-bar-track">
+                  <div class="mock-bar-fill" style="width:76%"></div>
+                </div>
+                <span class="pct">76%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mock-card mock-float mock-float-1">
+            <div style="font-size:.78rem;color:var(--text-muted);margin-bottom:.4rem" data-i18n="hero_float_task_label">
+              Bugungi vazifa</div>
+            <div style="font-weight:700;font-size:.92rem;margin-bottom:.6rem">JS: Arrow Functions</div>
+            <div class="mock-bar-track">
+              <div class="mock-bar-fill" style="width:40%"></div>
+            </div>
+          </div>
+
+          <div class="mock-card mock-float mock-float-2">
+            <div class="badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+                <path
+                  d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" />
+              </svg>
+            </div>
+            <div>
+              <strong data-i18n="hero_float_cert_title">Yangi sertifikat!</strong>
+              <span data-i18n="hero_float_cert_sub">Python Asoslari</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#subjects" class="scroll-hint" aria-label="Pastga scroll">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee-wrap">
+      <div class="container" style="overflow:hidden">
+        <div class="marquee-track">
+          <span>💻 <span data-i18n="marquee_web">Frontend Development</span></span>
+          <span>🐍 <span data-i18n="marquee_python">Python</span></span>
+          <span>🤖 <span data-i18n="marquee_ai">Artificial Intelligence</span></span>
+          <span>🇬🇧 <span data-i18n="marquee_english">English &amp; IELTS</span></span>
+          <span>📊 <span data-i18n="marquee_data">Kompyuter savodxonligi</span></span>
+          <span>💻 <span data-i18n="marquee_web">Frontend Development</span></span>
+          <span>🐍 <span data-i18n="marquee_python">Python</span></span>
+          <span>🤖 <span data-i18n="marquee_ai">Artificial Intelligence</span></span>
+          <span>🇬🇧 <span data-i18n="marquee_english">English &amp; IELTS</span></span>
+          <span>📊 <span data-i18n="marquee_data">Kompyuter savodxonligi</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SUBJECTS ============ -->
+    <section class="section" id="subjects">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="subjects_eyebrow">Fanlar</span>
+          <h2 data-i18n="subjects_title">Qaysi yo'nalishdan boshlaysiz?</h2>
+          <p data-i18n="subjects_desc">Har bir fan siznikidek loyihalar, testlar va amaliyot bilan qadamma-qadam
+            tuzilgan.</p>
+        </div>
+
+        <div class="subjects-grid">
+          <a href="course-detail.html" class="subject-card">
+            <div class="subject-icon">🖥️</div>
+            <h3 data-i18n="subj_lit_title">Kompyuter savodxonligi</h3>
+            <p data-i18n="subj_lit_desc">Kompyuter bilan ishlash asoslari, fayllar, internet va raqamli xavfsizlik.</p>
+            <div class="subject-meta"><span data-i18n="level_beginner">Boshlang'ich</span><span class="subject-level">24
+                <span data-i18n="lessons_word">dars</span></span></div>
+            <div class="subject-progress-track">
+              <div class="subject-progress-fill" style="width:100%"></div>
+            </div>
+          </a>
+
+          <a href="course-detail.html" class="subject-card">
+            <div class="subject-icon">💻</div>
+            <h3 data-i18n="subj_web_title">Frontend Development</h3>
+            <p data-i18n="subj_web_desc">HTML, CSS, JavaScript va zamonaviy web texnologiyalarni amaliyot orqali
+              o'rganing.</p>
+            <div class="subject-meta"><span data-i18n="level_beginner">Boshlang'ich</span><span class="subject-level">42
+                <span data-i18n="lessons_word">dars</span></span></div>
+            <div class="subject-progress-track">
+              <div class="subject-progress-fill" style="width:85%"></div>
+            </div>
+          </a>
+
+          <a href="course-detail.html" class="subject-card">
+            <div class="subject-icon">🐍</div>
+            <h3 data-i18n="subj_python_title">Python</h3>
+            <p data-i18n="subj_python_desc">Python asoslaridan boshlab, real loyihalar yaratishgacha bo'lgan yo'l.</p>
+            <div class="subject-meta"><span data-i18n="level_medium">O'rta</span><span class="subject-level">56 <span
+                  data-i18n="lessons_word">dars</span></span></div>
+            <div class="subject-progress-track">
+              <div class="subject-progress-fill" style="width:72%"></div>
+            </div>
+          </a>
+
+          <a href="course-detail.html" class="subject-card">
+            <div class="subject-icon">🤖</div>
+            <h3 data-i18n="subj_ai_title">Artificial Intelligence</h3>
+            <p data-i18n="subj_ai_desc">AI asoslari, machine learning va zamonaviy AI vositalaridan foydalanish.</p>
+            <div class="subject-meta"><span data-i18n="level_advanced">Ilg'or</span><span class="subject-level">31 <span
+                  data-i18n="lessons_word">dars</span></span></div>
+            <div class="subject-progress-track">
+              <div class="subject-progress-fill" style="width:38%"></div>
+            </div>
+          </a>
+
+          <a href="course-detail.html" class="subject-card">
+            <div class="subject-icon">🇬🇧</div>
+            <h3 data-i18n="subj_en_title">English</h3>
+            <p data-i18n="subj_en_desc">Grammar, Vocabulary, Speaking va IELTS uchun tayyorgarlik.</p>
+            <div class="subject-meta"><span data-i18n="level_all">Barcha daraja</span><span class="subject-level">64
+                <span data-i18n="lessons_word">dars</span></span></div>
+            <div class="subject-progress-track">
+              <div class="subject-progress-fill" style="width:76%"></div>
+            </div>
+          </a>
+
+          <a href="course-detail.html" class="subject-card">
+            <div class="subject-icon">🎨</div>
+            <h3 data-i18n="subj_css_title">HTML &amp; CSS</h3>
+            <p data-i18n="subj_css_desc">Zamonaviy va chiroyli veb-sahifalar yaratish uchun HTML5 va CSS3 asoslari.</p>
+            <div class="subject-meta"><span data-i18n="level_beginner">Boshlang'ich</span><span class="subject-level">38
+                <span data-i18n="lessons_word">dars</span></span></div>
+            <div class="subject-progress-track">
+              <div class="subject-progress-fill" style="width:60%"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COURSES ============ -->
+    <section class="section" id="courses"
+      style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="courses_eyebrow">Kurslar</span>
+          <h2 data-i18n="courses_title">Eng mashhur kurslar</h2>
+          <p data-i18n="courses_desc">Mentorlar tomonidan tayyorlangan, amaliyotga yo'naltirilgan kurslar to'plami.</p>
+        </div>
+
+        <div class="courses-tabs">
+          <button class="tab-btn active" data-tab="all" data-i18n="tab_all">Barchasi</button>
+          <button class="tab-btn" data-tab="web" data-i18n="tab_web">Web Development</button>
+          <button class="tab-btn" data-tab="python" data-i18n="tab_python">Python</button>
+          <button class="tab-btn" data-tab="english" data-i18n="tab_english">English</button>
+        </div>
+
+        <div class="courses-grid">
+          <div class="course-card" data-course-category="web">
+            <div class="course-thumb"><span class="course-emoji">🌐</span><span class="course-level-tag"
+                data-i18n="level_beginner">Boshlang'ich</span></div>
+            <div class="course-body">
+              <span class="course-cat" data-i18n="tab_web">Web Development</span>
+              <h3 data-i18n="course_web_title">Zamonaviy Web Development</h3>
+              <p data-i18n="course_web_desc">HTML, CSS, JavaScript va zamonaviy web texnologiyalar asosida sayt qurishni
+                o'rganing.</p>
+              <div class="course-meta-row">
+                <span>👥 2,340 <span data-i18n="student_word">o'quvchi</span></span>
+                <span class="course-rating"><svg viewBox="0 0 24 24">
+                    <path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1z" />
+                  </svg> 4.9</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price"><span data-i18n="price_free">Bepul</span> <small
+                    data-i18n="course_web_pricetag">/ boshlang'ich</small></div>
+                <a href="course-detail.html" class="btn btn-primary btn-sm" data-i18n="btn_enroll">Yozilish</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-course-category="python">
+            <div class="course-thumb"><span class="course-emoji">🐍</span><span class="course-level-tag"
+                data-i18n="level_medium">O'rta</span></div>
+            <div class="course-body">
+              <span class="course-cat" data-i18n="tab_python">Python</span>
+              <h3 data-i18n="course_python_title">Python Asoslari va Amaliyot</h3>
+              <p data-i18n="course_python_desc">Python tilini o'rganib, amaliy loyihalar orqali ko'nikmalaringizni
+                mustahkamlang.</p>
+              <div class="course-meta-row">
+                <span>👥 1,890 <span data-i18n="student_word">o'quvchi</span></span>
+                <span class="course-rating"><svg viewBox="0 0 24 24">
+                    <path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1z" />
+                  </svg> 4.8</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price">299,000 <small data-i18n="currency_som">so'm</small></div>
+                <a href="course-detail.html" class="btn btn-primary btn-sm" data-i18n="btn_enroll">Yozilish</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card" data-course-category="english">
+            <div class="course-thumb"><span class="course-emoji">🇬🇧</span><span class="course-level-tag"
+                data-i18n="level_all">Barcha daraja</span></div>
+            <div class="course-body">
+              <span class="course-cat" data-i18n="tab_english">English &amp; IELTS</span>
+              <h3 data-i18n="course_en_title">English &amp; IELTS Tayyorgarlik</h3>
+              <p data-i18n="course_en_desc">Grammar, Vocabulary, Speaking va IELTS bo'yicha to'liq tayyorgarlik kursi.
+              </p>
+              <div class="course-meta-row">
+                <span>👥 3,120 <span data-i18n="student_word">o'quvchi</span></span>
+                <span class="course-rating"><svg viewBox="0 0 24 24">
+                    <path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8 5.8 21.1 7 14.2l-5-4.9 6.9-1z" />
+                  </svg> 5.0</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price">349,000 <small data-i18n="currency_som">so'm</small></div>
+                <a href="course-detail.html" class="btn btn-primary btn-sm" data-i18n="btn_enroll">Yozilish</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="courses-more">
+          <a href="#subjects" class="btn btn-ghost" data-i18n="courses_more">Barcha kurslarni ko'rish</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="features_eyebrow">Imkoniyatlar</span>
+          <h2 data-i18n="features_title">O'rganishni osonlashtiradigan vositalar</h2>
+          <p data-i18n="features_desc">SkillNova shunchaki kurslar to'plami emas — bu sizning shaxsiy o'quv
+            ekotizimingiz.</p>
+        </div>
+
+        <div class="features-wrap">
+          <div class="feature-list">
+
+            <div class="feature-item active" data-feature-item data-key="f1">
+              <div class="feature-head">
+                <span class="feature-num">01</span>
+                <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 6v6l4 2" />
+                  </svg></span>
+                <h3 data-i18n="feat_1_title">Personal Learning Plan</h3>
+                <svg class="feature-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+              <div class="feature-desc" data-i18n="feat_1_desc">Sizning maqsadlaringiz va vaqtingizga moslashtirilgan
+                shaxsiy o'quv rejasi avtomatik tuziladi.</div>
+            </div>
+
+            <div class="feature-item" data-feature-item data-key="f2">
+              <div class="feature-head">
+                <span class="feature-num">02</span>
+                <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="10" rx="2" />
+                    <circle cx="12" cy="5" r="2" />
+                    <path d="M12 7v4M8 16h.01M16 16h.01" />
+                  </svg></span>
+                <h3 data-i18n="feat_2_title">AI Assistant</h3>
+                <svg class="feature-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+              <div class="feature-desc" data-i18n="feat_2_desc">24/7 mavjud AI yordamchi savollaringizga javob beradi va
+                tushunmagan mavzularni tushuntiradi.</div>
+            </div>
+
+            <div class="feature-item" data-feature-item data-key="f3">
+              <div class="feature-head">
+                <span class="feature-num">03</span>
+                <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="6" />
+                    <path d="M9 13.5L7 22l5-3 5 3-2-8.5" />
+                  </svg></span>
+                <h3 data-i18n="feat_3_title">Certificates</h3>
+                <svg class="feature-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+              <div class="feature-desc" data-i18n="feat_3_desc">Har bir kursni tugatganingizda haqiqiyligini
+                tasdiqlovchi raqamli sertifikat olasiz.</div>
+            </div>
+
+            <div class="feature-item" data-feature-item data-key="f4">
+              <div class="feature-head">
+                <span class="feature-num">04</span>
+                <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3v18h18" />
+                    <path d="M7 14l4-4 4 3 5-6" />
+                  </svg></span>
+                <h3 data-i18n="feat_4_title">Progress Tracking</h3>
+                <svg class="feature-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+              <div class="feature-desc" data-i18n="feat_4_desc">Har bir fan va kurs bo'yicha progressingizni real vaqtda
+                kuzatib boring.</div>
+            </div>
+
+            <div class="feature-item" data-feature-item data-key="f5">
+              <div class="feature-head">
+                <span class="feature-num">05</span>
+                <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 11l3 3L22 4" />
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                  </svg></span>
+                <h3 data-i18n="feat_5_title">Quizzes</h3>
+                <svg class="feature-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+              <div class="feature-desc" data-i18n="feat_5_desc">Har bir mavzudan so'ng bilimingizni sinovdan
+                o'tkazadigan interaktiv testlar.</div>
+            </div>
+
+          </div>
+
+          <div class="feature-visual" data-feature-visual>
+            <div class="fv-icon"></div>
+            <h4 data-fv-title></h4>
+            <p data-fv-desc></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="stats-strip">
+          <div class="stat-item">
+            <div class="stat-num" data-count="10" data-suffix="K+">0</div>
+            <div class="stat-label" data-i18n="stat_students">O'quvchilar</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="120" data-suffix="+">0</div>
+            <div class="stat-label" data-i18n="stat_courses">Kurslar</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="50" data-suffix="+">0</div>
+            <div class="stat-label" data-i18n="stat_mentors">Mentorlar</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="95" data-suffix="%">0</div>
+            <div class="stat-label" data-i18n="stat_satisfaction">Mamnun o'quvchilar</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="cta-band">
+          <h2 data-i18n="cta_title">O'rganishni bugundan boshlang</h2>
+          <p data-i18n="cta_desc">Minglab o'quvchilar qatoriga qo'shiling va yangi ko'nikmalarni bepul kurslar bilan
+            boshlang.</p>
+          <a href="#courses" class="btn btn-ghost" data-i18n="cta_button">Bepul boshlash</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo"><span class="logo-mark">S</span>SkillNova</a>
+          <p data-i18n="footer_about">Kelajagingizni quradigan zamonaviy online ta'lim platformasi. Dasturlash, AI va
+            English — bitta joyda.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_platform">Platforma</h4>
+          <a href="#courses" data-i18n="nav_courses">Kurslar</a>
+          <a href="#subjects" data-i18n="nav_subjects">Fanlar</a>
+          <a href="#features" data-i18n="nav_features">Imkoniyatlar</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_company">Kompaniya</h4>
+          <a href="#" data-i18n="footer_about_us">Biz haqimizda</a>
+          <a href="#" data-i18n="footer_mentors">Mentorlar</a>
+          <a href="#" data-i18n="footer_blog">Blog</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_help">Yordam</h4>
+          <a href="#" data-i18n="nav_contact">Aloqa</a>
+          <a href="#" data-i18n="footer_faq">Ko'p so'raladigan savollar</a>
+          <a href="#" data-i18n="footer_privacy">Maxfiylik siyosati</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer_copyright">© 2026 SkillNova. Barcha huquqlar himoyalangan.</span>
+        <div class="social-links">
+          <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21.9 4.3L18.5 20c-.3 1.1-1 1.4-2 .9l-5.5-4-2.6 2.5c-.3.3-.5.5-1 .5l.4-5.6L18 8.4c.5-.4-.1-.7-.7-.3L7 14.4l-5.4-1.7c-1.2-.4-1.2-1.2.2-1.7L20.6 3.4c1-.4 1.8.2 1.3 1z" />
+            </svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" />
+            </svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.24 8.25h4.5V23h-4.5V8.25zM8.5 8.25h4.3v2h.06c.6-1.1 2.05-2.3 4.22-2.3 4.5 0 5.33 2.9 5.33 6.7V23h-4.5v-6.8c0-1.6 0-3.7-2.25-3.7-2.26 0-2.6 1.75-2.6 3.6V23h-4.5V8.25z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
